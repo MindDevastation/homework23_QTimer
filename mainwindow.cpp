@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->lcdNumber->setSegmentStyle(QLCDNumber::Flat );
     ui->lcdNumber->setDigitCount(8);
+    ui->lcdNumber->display(QDateTime::currentDateTime().toString("HH mm ss"));
 
     Date_Time = new QTimer();
 
